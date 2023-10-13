@@ -1,0 +1,14 @@
+.dashboard-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    font-size: 60px;
+}
+
+.table-column {
+    display: flex;
+}

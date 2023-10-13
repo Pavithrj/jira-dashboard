@@ -1,0 +1,34 @@
+.authAccess-container {
+    display: flex;
+}
+
+/* login page */
+
+.signup-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.signup-title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.signup-subtitle {
+    width: 330px;
+    font-size: 25px;
+}
+
+.signup-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

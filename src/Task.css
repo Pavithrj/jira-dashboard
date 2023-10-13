@@ -1,0 +1,8 @@
+.task-card {
+    user-select: none;
+    padding: 16px;
+    margin: 8px;
+    min-height: 50px;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
