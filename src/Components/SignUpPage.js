@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SignUpPage.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -27,9 +27,14 @@ function SignUpPage() {
 
     const handlePasswordChange = (e) => {
         const passwordValue = e.target.value;
-        setPassword(passwordValue);
-        validatePassword(passwordValue);
-        checkButtonStatus();
+        
+        if (passwordValue.length <= 8) {
+            setPassword(passwordValue);
+            validatePassword(passwordValue);
+            checkButtonStatus();
+        } else {
+            setPassword(passwordValue.slice(0, 8));
+        }
     };
 
     const handleConfirmPasswordChange = (e) => {
@@ -48,7 +53,9 @@ function SignUpPage() {
     };
 
     const validatePassword = (password) => {
-        if (!isValidPassword(password)) {
+        if (password.length > 8) {
+            setPasswordError('Password must be exactly 8 characters.');
+        } else if (password.length < 8) {
             setPasswordError('Password must be at least 8 characters.');
         } else {
             setPasswordError('');
@@ -67,10 +74,6 @@ function SignUpPage() {
         return /\S+@\S+\.\S+/.test(email);
     };
 
-    const isValidPassword = (password) => {
-        return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/.test(password);
-    };
-
     const checkButtonStatus = () => {
         if (email && username && password && confirmPassword && !emailError && !passwordError && !confirmPasswordError) {
             setIsButtonDisabled(false);
@@ -82,6 +85,10 @@ function SignUpPage() {
     const handleSubmit = () => {
         navigate('/dashboard');
     };
+
+    useEffect(() => {
+        checkButtonStatus();
+    },);
 
     return (
         <div className="signup-page">
@@ -115,7 +122,14 @@ function SignUpPage() {
                 />
                 {confirmPasswordError && <div className="error-message">{confirmPasswordError}</div>}
                 <div className="signup-page-btn">
-                    <button type="submit" className="signup-btn" onClick={handleSubmit} disabled={isButtonDisabled}>Submit</button>
+                    <button
+                        type="submit"
+                        className={`signup-btn ${isButtonDisabled ? 'disabled' : 'active'}`}
+                        onClick={handleSubmit}
+                        disabled={isButtonDisabled}
+                    >
+                        Submit
+                    </button>
                 </div>
             </div>
         </div>

@@ -26,17 +26,19 @@ function LoginPage() {
     };
 
     const handlePasswordChange = (e) => {
-        const passwordValue = e.target.value;
+        const passwordValue = e.target.value.substring(0, 8);
         setPassword(passwordValue);
         setIsButtonDisabled(email === '' || passwordValue === '');
         setPasswordError('');
 
-        if (!isValidPassword(passwordValue)) {
+        if (passwordValue.length < 8) {
             setPasswordError('Password must be at least 8 characters.');
+        } else {
+            setPasswordError('');
         }
     };
 
-    const handleSignIn = () => {
+    const handleLogIn = () => {
         if (isValidEmail(email) && isValidPassword(password)) {
             navigate('/dashboard');
         }
@@ -87,8 +89,13 @@ function LoginPage() {
                         className="input-box"
                     />
                     {passwordError && <div className="error-message">{passwordError}</div>}
-                    <button type="button" className="signin-btn" disabled={isButtonDisabled} onClick={handleSignIn}>
-                        Sign In
+                    <button
+                        type="button"
+                        className={`login-btn ${isButtonDisabled ? 'disabled' : 'active'}`}
+                        onClick={handleLogIn}
+                        disabled={isButtonDisabled}
+                    >
+                        Log In
                     </button>
                 </div>
             </div>

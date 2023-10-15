@@ -2,15 +2,15 @@
     display: flex;
 }
 
-/* login page */
+/* sign container */
 
 .signup-container {
     width: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: #ffffff;
     align-items: center;
     row-gap: 20px;
 }

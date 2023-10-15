@@ -7,13 +7,11 @@ import DashBoardPage from './Components/DashBoard';
 function App() {
   return (
     <BrowserRouter>
-      <div>
         <Routes>
           <Route path="/" element={<AuthAccess />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/dashboard" element={<DashBoardPage />} />
         </Routes>
-      </div>
     </BrowserRouter>
   );
 }
