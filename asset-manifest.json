@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jira-management/static/css/main.d188d5b1.css",
-    "main.js": "/jira-management/static/js/main.5e848cb3.js",
-    "static/js/787.1ea69973.chunk.js": "/jira-management/static/js/787.1ea69973.chunk.js",
-    "static/media/google_logo.jpeg": "/jira-management/static/media/google_logo.6de75be17d1e15125092.jpeg",
-    "index.html": "/jira-management/index.html",
-    "main.d188d5b1.css.map": "/jira-management/static/css/main.d188d5b1.css.map",
-    "main.5e848cb3.js.map": "/jira-management/static/js/main.5e848cb3.js.map",
-    "787.1ea69973.chunk.js.map": "/jira-management/static/js/787.1ea69973.chunk.js.map"
+    "main.css": "/jira-dashboard/static/css/main.d188d5b1.css",
+    "main.js": "/jira-dashboard/static/js/main.aa9b5e1e.js",
+    "static/js/787.393bbb40.chunk.js": "/jira-dashboard/static/js/787.393bbb40.chunk.js",
+    "static/media/google_logo.jpeg": "/jira-dashboard/static/media/google_logo.6de75be17d1e15125092.jpeg",
+    "index.html": "/jira-dashboard/index.html",
+    "main.d188d5b1.css.map": "/jira-dashboard/static/css/main.d188d5b1.css.map",
+    "main.aa9b5e1e.js.map": "/jira-dashboard/static/js/main.aa9b5e1e.js.map",
+    "787.393bbb40.chunk.js.map": "/jira-dashboard/static/js/787.393bbb40.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d188d5b1.css",
-    "static/js/main.5e848cb3.js"
+    "static/js/main.aa9b5e1e.js"
   ]
 }
