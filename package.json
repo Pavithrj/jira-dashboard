@@ -1,6 +1,6 @@
 {
-  "homepage": "https://PavithrJ.github.io/jira-task-management",
-  "name": "jira-task-management",
+  "homepage": "https://PavithrJ.github.io/jira-management",
+  "name": "jira-management",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
