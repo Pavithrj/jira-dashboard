@@ -1,6 +1,6 @@
 {
-  "homepage": "http://pavithrj.github.io/jira-management",
-  "name": "jira-management",
+  "homepage": "https://pavithrj.github.io/jira-dashboard",
+  "name": "jira-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
