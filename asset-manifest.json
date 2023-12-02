@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jira-task-management/static/css/main.d188d5b1.css",
-    "main.js": "/jira-task-management/static/js/main.fcb4961b.js",
-    "static/js/787.329fa273.chunk.js": "/jira-task-management/static/js/787.329fa273.chunk.js",
-    "static/media/google_logo.jpeg": "/jira-task-management/static/media/google_logo.6de75be17d1e15125092.jpeg",
-    "index.html": "/jira-task-management/index.html",
-    "main.d188d5b1.css.map": "/jira-task-management/static/css/main.d188d5b1.css.map",
-    "main.fcb4961b.js.map": "/jira-task-management/static/js/main.fcb4961b.js.map",
-    "787.329fa273.chunk.js.map": "/jira-task-management/static/js/787.329fa273.chunk.js.map"
+    "main.css": "/jira-management/static/css/main.d188d5b1.css",
+    "main.js": "/jira-management/static/js/main.5e848cb3.js",
+    "static/js/787.1ea69973.chunk.js": "/jira-management/static/js/787.1ea69973.chunk.js",
+    "static/media/google_logo.jpeg": "/jira-management/static/media/google_logo.6de75be17d1e15125092.jpeg",
+    "index.html": "/jira-management/index.html",
+    "main.d188d5b1.css.map": "/jira-management/static/css/main.d188d5b1.css.map",
+    "main.5e848cb3.js.map": "/jira-management/static/js/main.5e848cb3.js.map",
+    "787.1ea69973.chunk.js.map": "/jira-management/static/js/787.1ea69973.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d188d5b1.css",
-    "static/js/main.fcb4961b.js"
+    "static/js/main.5e848cb3.js"
   ]
 }
